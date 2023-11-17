@@ -12,7 +12,7 @@ Game::Game(QWidget* parent) {
     scene = new QGraphicsScene();
     scene->setSceneRect(0, 0, 800, 600); // make the scene 800x600 instead of infinity by infinity (default)
     // Establecer la imagen de fondo
-    QPixmap backgroundImage("D:/microsoft visual studio/PruebaJuego/Assets/fondo videojuego.jpg");
+    QPixmap backgroundImage("../Assets/fondo videojuego.jpg");
     backgroundImage = backgroundImage.scaledToHeight(600); // Estirar la imagen para que ocupe la altura de la ventana
     setBackgroundBrush(QBrush(backgroundImage));
 
@@ -52,7 +52,7 @@ Game::Game(QWidget* parent) {
     QMediaPlayer* backgroundMusic = new QMediaPlayer;
     QAudioOutput* audioOutput = new QAudioOutput();
     backgroundMusic->setAudioOutput(audioOutput);
-    backgroundMusic->setSource(QUrl::fromLocalFile("D:/microsoft visual studio/PruebaJuego/Assets/TurnDownForWhat.mp3"));
+    backgroundMusic->setSource(QUrl::fromLocalFile("../Assets/TurnDownForWhat.mp3"));
     audioOutput->setVolume(30);
     backgroundMusic->play();
 

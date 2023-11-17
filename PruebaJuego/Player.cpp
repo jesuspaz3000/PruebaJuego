@@ -6,7 +6,7 @@
 
 Player::Player(QGraphicsItem* parent) : QGraphicsPixmapItem(parent) {
     // set graphic
-    setPixmap(QPixmap("D:/microsoft visual studio/PruebaJuego/Assets/avionVideojuego1.png").scaled(150, 150));
+    setPixmap(QPixmap("../Assets/avionVideojuego1.png").scaled(150, 150));
 }
 
 void Player::keyPressEvent(QKeyEvent* event) {
@@ -31,7 +31,7 @@ void Player::keyPressEvent(QKeyEvent* event) {
         QMediaPlayer* bulletsound = new QMediaPlayer();
         QAudioOutput* audioBulletOutput = new QAudioOutput();
         bulletsound->setAudioOutput(audioBulletOutput);
-        bulletsound->setSource(QUrl::fromLocalFile("D:/microsoft visual studio/PruebaJuego/Assets/blaster-2-81267.mp3"));
+        bulletsound->setSource(QUrl::fromLocalFile("../Assets/blaster-2-81267.mp3"));
         audioBulletOutput->setVolume(50);
 
         // play bulletsound

@@ -13,7 +13,7 @@ Enemy::Enemy(QGraphicsItem* parent) : QObject(), QGraphicsPixmapItem(parent) {
     setPos(random_number - 40, 0);
 
     // Set the pixmap
-    setPixmap(QPixmap("D:/microsoft visual studio/PruebaJuego/Assets/Avion enemigo videojuego.png").scaled(150, 150));
+    setPixmap(QPixmap("../Assets/Avion enemigo videojuego.png").scaled(150, 150));
 
     // Create a timer to move the enemy
     QTimer* timer = new QTimer(this);

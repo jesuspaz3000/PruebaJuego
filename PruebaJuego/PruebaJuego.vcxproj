@@ -110,6 +110,7 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="Health.h" />
     <QtMoc Include="Player.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Score.h" />
   </ItemGroup>
   <ItemGroup>
